@@ -1,0 +1,15 @@
+<div class="p-4 shadow-4 rounded-3" style="background-color: hsl(0, 0, 94%);">
+        <h2>SSCEPlus</h2>
+        <p>
+            We provide relevant contents for students and teachers alike preparing for Senior 
+            School Certificate Examinations and lots more.
+        </p>
+        <hr class="my-4">
+        <p>
+            You have unlimited assess to our learning materials, quizzes, past questions, scheme of 
+            work, syllabus, topnotch success guide, etc.
+        </p>
+        <a type="button" class="btn btn-primary" href="/">
+            Start Learning
+        </a>
+    </div>
