@@ -1,3 +1,2 @@
 venv
-
-ssceplus/settings.py
+.env

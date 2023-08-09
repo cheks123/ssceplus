@@ -22,3 +22,4 @@ The site is meant to feature
 All the dependencies are in the requirements.txt file at the root directory of the project.
 Some of them are also listed as follows:
 1. Django-bootstrap-v5
+2. python-dotenv
