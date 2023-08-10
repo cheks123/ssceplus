@@ -1,3 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
 .navbar{
     background-color: #333;
     padding-left: 1rem;
@@ -77,10 +86,8 @@
     }
 
     .navbar-links ul{
+        width:100%;
         flex-direction: column;
-    }
-    .navbar-links a{
-       
     }
 
     .navbar-links li{

@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
     <link ref="icon" type="image/x-icon" href="{% static 'image/favicon.ico' %}">
     <title>{% block title %} {{ title }}{% endblock %}</title>
-    {% load bootstrap5 %}
+    <!--{% load bootstrap5 %}
     {% bootstrap_css %}
-    {% bootstrap_javascript %}
+    {% bootstrap_javascript %} -->
     <style>
         #hero-image{
             height: 400px;
@@ -27,17 +27,17 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="brand-title"><a href="">SSCEPlus</a></div>
+            <div class="brand-title"><a href="/">SSCEPlus</a></div>
             <div class="toggle-button" id="toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
             <div class="navbar-links" id="navbar">
                 <ul>
-                    <li><a href="">Subjects</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">More</a></li>
+                    <li><a href="/">Subjects</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">More</a></li>
                 </ul>
             </div>
 
