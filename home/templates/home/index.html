@@ -26,25 +26,21 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-light">
-            <div class="container-fluid">
-                    <a class="nav-link navbar-brand" href="/">SSCEPlus</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavBar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">Subjects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">Quiz</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">More</a>
-                            </li>
-                    </ul>
-                </div>
+        <nav class="navbar">
+            <div class="brand-title"><a href="">SSCEPlus</a></div>
+            <div class="toggle-button" id="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <div class="navbar-links" id="navbar">
+                <ul>
+                    <li><a href="">Subjects</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">More</a></li>
+                </ul>
+            </div>
+
         </nav>
         <div id="hero-image" class="p-5 text-center bg-image" style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
@@ -62,6 +58,7 @@
             </div>
         </div>
 </header>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 </body>
 {% block content %}
 {% endblock %}
