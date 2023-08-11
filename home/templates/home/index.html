@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
     <link ref="icon" type="image/x-icon" href="{% static 'image/favicon.ico' %}">
     <title>{% block title %} {{ title }}{% endblock %}</title>
@@ -36,25 +37,19 @@
             <div class="navbar-links" id="navbar">
                 <ul>
                     <li><a href="/">Subjects</a></li>
-                    <li><a href="/">Services</a></li>
+                    <li><a href="/">About</a></li>
                     <li><a href="/">More</a></li>
                 </ul>
             </div>
 
         </nav>
-        <div id="hero-image" class="p-5 text-center bg-image" style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="text-white">
-                        <h1 class="mb-3">SSCEPlus</h1>
-                        <h5 class="mb-4">Best place for exam preparation and more</h5>
-                        <a class="btn btn-outline-light btn-lg m-2" role="button" 
-                        rel="nofollow" target="_blank" href="/subjects">
-                            Start Learning
-                        </a>
-                        <a class="btn btn-outline-light btn-lg m-2" role="button" target="_blank" href="/">Take Quiz</a>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="hero-text">
+                <h1>SSCEPlus</h1>
+                <h2>Helps You Prepare <br>for Your Exams</h2>
+            </div>
+            <div class="hero-img">
+                <img src="{% static 'image/education.png' %}" width="100%" height="100%">
             </div>
         </div>
 </header>
