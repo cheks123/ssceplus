@@ -128,5 +128,51 @@ body{
         display:flex;
     }
 
+    .banner{
+        flex-direction: column;
+        position:relative;
+    }
+
+    .hero-text, .hero-img{
+        width:100%;
+    }
+
+    .hero-text{
+        z-index: 10;
+        opacity: 0.5;
+    }
+
+    .hero-text h1{
+        font-size: 5rem;
+        background-color: blue;
+        width: fit-content;
+        padding:1rem;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        opacity:1;
+        text-shadow: 2px 2px black;
+    }
+
+    .hero-text h2{
+        font-size: 3rem;
+        background-color: blue;
+        width: fit-content;
+        padding:1rem;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-shadow: 2px 2px black;
+        opacity:1px;
+    }
+
+    .hero-text h2{
+        font-size: 3rem;
+    }
+
+    .hero-img{
+        position:absolute;
+        top:0px;
+        left:0px;
+    }
+
 
 }
