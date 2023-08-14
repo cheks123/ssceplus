@@ -53,8 +53,21 @@
             </div>
         </div>
 </header>
-<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
-</body>
+<div class="row sci-math">
+    <h1>Science and Mathematics</h1>
+    <div class="subjects"></div>
+</div>
+<div class="row sci-math">
+    <h1>Art and Language</h1>
+    <div class="subjects"></div>
+</div>
+<footer>
+    <div class="row"></div>
+</footer>
 {% block content %}
 {% endblock %}
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+</body>
+
 </html>
