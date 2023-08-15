@@ -28,11 +28,49 @@ next.addEventListener('click', ()=>{
         let position = Number(node.firstElementChild.innerText) - 105
         if (position < 0){
             position = 315
+
         }
         node.firstElementChild.innerText = position
-        node.style.transform = `translate(${position}%, 0)`
+        if (position != 315){
+            node.style.zIndex = "20"
+            node.style.transition = "all 2s"
+            node.style.transform = `translate(${position}%, 0)`
+        }
+        else{
+            node.style.zIndex = "10"
+            node.style.transition = "all 0s"
+            node.style.transform = `translate(${position}%, 0)`
+        }
 
     })
+
+
+
+})
+
+previous.addEventListener('click', ()=>{
+    curr = curr + 105
+    slides.forEach(node=>{
+        let position = Number(node.firstElementChild.innerText) + 105
+        if (position > 315){
+            position = 0
+        }
+        node.firstElementChild.innerText = position
+        if (position != 0){
+            node.style.zIndex = "20"
+            node.style.transition = "all 2s"
+            node.style.transform = `translate(${position}%, 0)`
+        }
+        else{
+            node.style.zIndex = "10"
+            node.style.transition = "all 0s"
+            node.style.transform = `translate(${position}%, 0)`
+        }
+        //node.style.transform = `translate(${position}%, 0)`
+
+    })
+
+
 
 })
 
