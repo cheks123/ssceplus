@@ -7,24 +7,17 @@ toggle.addEventListener('click', () =>{
     navbar.classList.toggle('active')
 })
 
-const slides = document.querySelectorAll('.slide')
+const slides1 = document.querySelectorAll('.slide1')
 
-slides.forEach(node=>{
-    console.log(node.firstElementChild.innerText)
+slides1.forEach(node=>{
     let position = Number(node.firstElementChild.innerText) * 105
     node.firstElementChild.innerText = position
 
     node.style.transform = `translate(${position}%, 0)`
-    
-    console.log(position)
-  
 })
-
-let curr = 0
-
 next.addEventListener('click', ()=>{
-    curr = curr + 105
-    slides.forEach(node=>{
+   
+    slides1.forEach(node=>{
         let position = Number(node.firstElementChild.innerText) - 105
         if (position < 0){
             position = 315
@@ -33,7 +26,7 @@ next.addEventListener('click', ()=>{
         node.firstElementChild.innerText = position
         if (position != 315){
             node.style.zIndex = "20"
-            node.style.transition = "all 2s"
+            node.style.transition = "all 1s"
             node.style.transform = `translate(${position}%, 0)`
         }
         else{
@@ -49,8 +42,7 @@ next.addEventListener('click', ()=>{
 })
 
 previous.addEventListener('click', ()=>{
-    curr = curr + 105
-    slides.forEach(node=>{
+    slides1.forEach(node=>{
         let position = Number(node.firstElementChild.innerText) + 105
         if (position > 315){
             position = 0
@@ -58,7 +50,7 @@ previous.addEventListener('click', ()=>{
         node.firstElementChild.innerText = position
         if (position != 0){
             node.style.zIndex = "20"
-            node.style.transition = "all 2s"
+            node.style.transition = "all 1s"
             node.style.transform = `translate(${position}%, 0)`
         }
         else{
@@ -66,12 +58,8 @@ previous.addEventListener('click', ()=>{
             node.style.transition = "all 0s"
             node.style.transform = `translate(${position}%, 0)`
         }
-        //node.style.transform = `translate(${position}%, 0)`
-
     })
 
 
 
 })
-
-console.log(slides)

@@ -125,9 +125,25 @@ div.subjects{
     top:0;
 }
 
+.first{
+    transform:translateX(0)
+}
+
+
+.second{
+    transform:translateX(105%)
+}
+
+.third{
+    transform: translateX(210%);
+}
+
+.forth{
+    transform: translate(315%);
+}
+
 .slide p{
-    display:none;
-    z-index: 10;
+    display:none
 }
 
 
