@@ -111,6 +111,7 @@ body{
 
 section{
     margin:50px 0;
+    padding:0 5px;
 }
 
 .slider{
@@ -229,6 +230,11 @@ footer div{
         position:absolute;
         top:0px;
         left:0px;
+    }
+
+    .slider{
+        margin: 60px auto;
+        width: 85%;
     }
 
 

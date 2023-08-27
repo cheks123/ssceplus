@@ -97,16 +97,32 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-      $('.slider').slick({
+        let $window = $(window)
+        let windowsize = $window.width();
+        console.log(windowsize)
+        console.log(window.innerWidth)
+        if (windowsize > 600) {
+            $('.slider').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: false,
+                    autoplaySpeed: 2000,
+                    arrows:true
 
-       
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 2000,
-  arrows:true
+            })
+        }
+        else
+        {
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                arrows:true
 
-      });
+             })
+        }
+    
     });
   </script>
 
