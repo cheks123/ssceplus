@@ -8,7 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
-    <link ref="icon" type="image/x-icon" href="{% static 'image/favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'slick-1.8.1/slick/slick.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'slick-1.8.1/slick/slick-theme.css' %}"/>
+				
+
     <title>{% block title %} {{ title }}{% endblock %}</title>
     <style>
         #hero-image{
@@ -52,7 +55,7 @@
 </header>
     <section>
         <h1 class="subject-h1">Science and Mathematics</h1>
-        <div class="subjects">
+        <div class="subjects slider" >
             <div class="subject">
                 <h2>Mathematics</h2>
             </div>
@@ -65,31 +68,47 @@
             <div class="subject">
                 <h2>Biology</h2>
             </div>
+            <div><h2>Further Mathematics</h2></div>
         </div>
     </section>
-    <section>
-        <h1 class="subject-h1">Arts and Socials</h1>
-        <div class="subjects">
-            <div class="subject">
-                <h2>English Language</h2>
-            </div>
-            <div class="subject">
-                <h2>Literature in English</h2>
-            </div>
-            <div class="subject">
-                <h2>Government</h2>
-            </div>
-            <div class=subject>
-                <h2>Civic Education</h2>
-            </div>
-        </div>
-    </section>
+
+ <section>
+    <h1 class="subject-h1">Art and Languages</h1>
+    <div class="subjects slider">
+        <div class="subject"><h2>English Language</h2></div>
+        <div class="subject"><h2>Literature in English</h2></div>
+        <div class="subject"><h2>Goverment</h2></div>
+        <div class="subject"><h2>Civic Education</h2></div>
+        <div class="subject"><h2>CRK</h2></div>
+
+    </div>
+</section>
+
 <footer>
     <div></div>
 </footer>
 {% block content %}
 {% endblock %}
 <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{% static 'slick-1.8.1/slick/slick.min.js' %}"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+
+       
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  arrows:true
+
+      });
+    });
+  </script>
 
 </body>
 

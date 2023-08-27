@@ -113,6 +113,21 @@ section{
     margin:50px 0;
 }
 
+.slider{
+    margin: 60px auto;
+    width: 95%;
+}
+
+.slider div{
+    text-align: center;
+}
+
+
+
+.slick-prev:before,
+.slick-next:before{
+    color: #1f51ff !important;
+}
 
 
 
