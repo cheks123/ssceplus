@@ -247,6 +247,30 @@ footer ul li a{
 
 @media screen and (min-width:800px){
 
+    .toggle-button{
+        display:none;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .navbar-links{
+        display: flex;
+        width: fit-content;
+    }
+
+   
+
+    .navbar-links ul{
+        display:flex;
+        flex-direction: row;
+        position:static;
+    }
+
     .subject-text{
         padding:2rem 6rem;
         font-size: 1.5rem;
