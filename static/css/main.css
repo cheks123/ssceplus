@@ -246,6 +246,18 @@ footer ul li a{
 }
 
 @media screen and (min-width:800px){
+    .banner{
+        display:flex
+    }
+
+    .hero-text, .hero-img{
+        width: 50%;
+        position:static
+    }
+
+    .hero-text{
+        background-color: #0000ff;
+    }
 
     .toggle-button{
         display:none;
