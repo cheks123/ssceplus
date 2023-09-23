@@ -234,6 +234,9 @@ div.math-row h2{
 footer{
     background-color: #191970;
     color:#fff;
+    font-size: 1.2rem;
+    width:100%;
+    display:block;
 }
 
 footer ul{
@@ -288,10 +291,16 @@ footer ul li a{
         font-size: 1.5rem;
     }
 
+
     .footer-links{
         display:flex;
+        width: 100%;
     }
    .col3{
     width: 25%;
+   }
+
+   .copyright{
+    width:100%
    }
 }
