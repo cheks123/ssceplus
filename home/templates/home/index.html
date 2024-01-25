@@ -1,0 +1,214 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+    <link rel="stylesheet" type="text/css" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <title>{% block title %} {{ title }}{% endblock %}</title>
+    <style>
+        #hero-image{
+            height: 400px;
+        }
+        @media (min-width:992px){
+            #hero-image{
+                height:600px;
+            }
+        }
+    </style>
+    {% block js %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-title"><a href="/">SSCEPlus</a></div>
+            <div class="toggle-button" id="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links" id="navbar">
+                <ul>
+                    <li><a href="/">Subjects</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">More</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="row banner">
+            <div class="hero-text">
+                <h1>SSCEPlus</h1>
+                <h2>Helps You Prepare <br>for Your Exams</h2>
+            </div>
+            <div class="hero-img">
+                <img src="{% static 'image/education.png' %}" width="100%" height="100%">
+            </div>
+        </div>
+</header>
+    <section>
+        <h1 class="subject-h1">Science and Mathematics</h1>
+        <div class="all-subjects">
+            <div class="row subject-row">
+                <h2 class="subject-name">Mathematics</h2>
+                <p class="subject-text">
+                    Mathematics is a core subject in the school curriculum. 
+                    It is required that every student gets at least a credit pass in the
+                    subject in order to be eligible for admission into the higher institutions.
+                    In this section, you are provided with materials that will enable you excel in subject.
+                </p>
+                <a class="start-learning-cta" href="">Start Learning</a>
+            </div>
+            <div class="row subject-row-2">
+            <div class="col6">
+                <h2 class="subject-name">Physics</h2>
+                <p class="subject-text">
+                    Physics is essential for anyone who wants to venture into the field of engineering,
+                    astronomy and science. It enables us to unravel matter and its relation to energy.
+                    Join us to explore gravity, electricity, magnetism, light, sound and lots more. 
+                </p>
+                <a class="start-learning-cta" href="">Start Learning</a>
+            </div>
+            <div class="col6">
+                <h2 class="subject-name">Chemistry</h2>
+                <p class="subject-text">
+                    Chemistry is a science subject that deals with the property,
+                    constituent and uses of matter. It is an essential subject for anyone
+                    that want to go into the field of engineering, medicine and science.
+                    Join us to explore length and breadth of matter.
+                </p>
+                <a class="start-learning-cta" href="">Start Learning</a>
+            </div>
+        </div>
+        <div class="row subject-row-2">
+            <div class="col6">
+                <h2 class="subject-name">Biology</h2>
+                <p class="subject-text">
+                    Biology is the study of living things, plants and animals,
+                    and their environment. It is an interesting thing to study
+                    the innumerable number of living things ranging from 
+                    micro-organisms like viruses and bacteria to macro-organisms 
+                    like the blue whales, elephants and human.
+                </p>
+                <a class="start-learning-cta" href="">Start Learning</a>
+            </div>
+            <div class="col6">
+                <h2 class="subject-name">Further Mathematics</h2>
+                <p class="subject-text">
+                    This subject is an extension of General Mathematics.
+                    Here, we cover more advanced topics like calculus,
+                    permutation and combination, probability distributions etc.
+                    It is advisable for learners who want to study engineering,
+                    science or social science courses in the university to take the subject.
+                </p>
+                <a class="start-learning-cta" href="">Start Learning</a>
+            </div>
+        </div>
+    </section>
+
+ <section>
+    <h1 class="subject-h1">Arts and Socials</h1>
+    
+        <div class="row subject-row">
+            <h2 class="subject-name">English Language</h2>
+            <p class="subject-text">
+                English Language is the official language of 67 countries. 
+                It is the only subject that is compulsory in both SSCE and UTME. 
+                It mandatory for a student to pass the subject before they can gain 
+                admission into the higher institution.
+            </p>
+            <a class="start-learning-cta" href="">Start Learning</a>
+        </div>
+        <div class="row subject-row-2">
+            <div class="col6">
+                <h2 class="subject-name">Literature in English</h2>
+                <p class="subject-text">
+                    Literature is the written works of art. It is divided into prose, drama and poetry. 
+                    Literature is an important subject for all art, law and history students. 
+                    Reading literature works helps to learn about our history, civilization and culture.
+                </p>
+                <a class="start-learning-cta" href="">Start Learning</a>
+            </div>
+            <div class="col6">
+                <h2 class="subject-name">Government</h2>
+                <p class="subject-text">
+                    Government is the subject that teaches us how states are defined and governed. 
+                    It can be seen as the institution of the state, an art of governance, and as
+                    an academic field of study. The subject is important for students who want study law, 
+                    political science and public administration.
+                
+                </p>
+                <a class="start-learning-cta" href="">Start Learning</a>
+            </div>
+        </div>
+        <div class="row subject-row-2">
+            <div class="col6">
+                <h2 class="subject-name">Civic Education</h2>
+                <p class="subject-text">
+                    We ought to behave well in the society. Civic Education is the subject in
+                    the Nigeria Basic and Senior school curriculum that teaches learners the right way to behave
+                    in the society.
+                </p>
+                <a class="start-learning-cta" href="">Start Learning</a>
+            </div>
+            <div class="col6">
+                <h2 class="subject-name">CRK</h2>
+                <p class="subject-text">
+                    Christian Religious Knowledge teaches us about Christainity, societal values.
+                    You also learn about the Leadership of Jesus Christ and His apostles.
+                </p>
+                <a class="start-learning-cta" href="">Start Learning</a>
+            </div>
+        </div>
+
+</section>
+
+<footer class="row">
+    <div class="footer-links">
+        <div class="col3">
+            <h4>Internal links</h4>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <h4>STEM Subjects</h4>
+            <ul>
+            <li><a href="#">Mathematics</a></li>
+            <li><a href="#">Physics</a></li>
+            <li><a href="#">Chemistry</a></li>
+            <li><a href="#">Biology</a></li>  
+            </ul>
+        </div>
+        <div class="col3">
+            <h4>Arts Subjects</h4>
+            <ul>
+            <li><a href="#">English Language</a></li>
+            <li><a href="#">Literature in English</a></li>
+            <li><a href="#">Goverment</a></li>
+            <li><a href="#">CRK</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i>X</li>
+            <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+        </div>
+    </div>
+ </footer>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
